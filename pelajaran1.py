@@ -11,11 +11,12 @@ class Hero:
         print("\n")
 
     def serang(self, lawan):
-        print(self.name + " menyerang " + lawan.nama)
-        lawan.diserang(self)
+        print(self.name + " menyerang " + lawan.name)
+        lawan.diserang(self, self.attack)
+        print("\n")
 
     def diserang(self, lawan, attackPower_lawan):
-        print(self.name + " diserang " + lawan.nama)
+        print(self.name + " diserang " + lawan.name)
         attack_diterima = attackPower_lawan / self.armor
         print("Serangan Terasa " + str(attack_diterima))
         self.health -= attack_diterima
@@ -27,3 +28,6 @@ marksmen = Hero("Marksmen", 100, 50, 5)
 
 print(sniper.__dict__)
 print(marksmen.__dict__)
+print("\n")
+sniper.serang(marksmen)
+marksmen.serang(sniper)
