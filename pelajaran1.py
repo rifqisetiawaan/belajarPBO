@@ -24,3 +24,6 @@ class Hero:
 
 sniper = Hero("Sniper", 100, 50, 5)
 marksmen = Hero("Marksmen", 100, 50, 5)
+
+print(sniper.__dict__)
+print(marksmen.__dict__)
