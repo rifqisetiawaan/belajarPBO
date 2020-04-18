@@ -18,10 +18,9 @@ class Hero:
         print(self.name + " diserang " + lawan.nama)
         attack_diterima = attackPower_lawan / self.armor
         print("Serangan Terasa " + str(attack_diterima))
+        self.health -= attack_diterima
+        print("darah " + self.name + " tersisa " + str(self.health))
 
 
 sniper = Hero("Sniper", 100, 50, 5)
 marksmen = Hero("Marksmen", 100, 50, 5)
-
-sniper.printNama()
-marksmen.printNama()
