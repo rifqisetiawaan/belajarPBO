@@ -6,6 +6,8 @@ class Hero:
     def printNama(self):
         print("nama Saya adalah " + self.nama + " darah saya " + str(self.health))
 
-sniper = Hero("sniper", 100)
+sniper = Hero("Sniper", 100)
+marksmen = Hero("Marksmen", 100)
 
 sniper.printNama()
+marksmen.printNama()
