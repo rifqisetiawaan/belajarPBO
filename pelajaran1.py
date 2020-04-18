@@ -12,6 +12,10 @@ class Hero:
 
     def serang(self, lawan):
         print(self.nama + " menyerang " + lawan.nama)
+        lawan.diserang(self)
+
+    def diserang(self, lawan):
+        print(self.nama + " diserang " + lawan.nama)
 
 
 sniper = Hero("Sniper", 100, 50, 5)
